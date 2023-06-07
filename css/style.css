@@ -23,7 +23,9 @@ main {
     width: 56rem;
     height: 31.4rem;
     display: grid;
+    border-radius: .6rem;
 }
+
 
 .col {
     display: flex;
@@ -96,15 +98,30 @@ button {
 
 
 @media (max-width: 930px) {
+    body { 
+        padding: 10rem 0;
+    }
     main {
         grid-template-rows: 1fr 1fr 1fr;
         margin: 1rem;
         max-width: 440px;
+        max-height: 90%;
     }
     
     button {
         margin-top: 2rem;
     }
+
+    .c1 {
+        border-top-left-radius: .6rem;
+        border-top-right-radius: .6rem;
+    }
+
+    .c3 {
+        border-bottom-left-radius: .6rem;
+        border-bottom-right-radius: .6rem;
+    }
+    
 }
 
 
@@ -112,4 +129,15 @@ button {
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .c1 {
+        border-top-left-radius: .6rem;
+        border-bottom-left-radius: .6rem;
+    }
+
+    .c3 {
+        border-top-right-radius: .6rem;
+        border-bottom-right-radius: .6rem;
+    }
+    
 }
